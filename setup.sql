@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS devups;
+CREATE DATABASE devups;
+
+DROP DATABASE IF EXISTS devups_test;
+CREATE DATABASE devups_test;
