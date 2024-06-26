@@ -149,4 +149,7 @@ module.exports = [
   {
     name: 'push',
   },
+  {
+    name: 'HTTPS',
+  },
 ];
