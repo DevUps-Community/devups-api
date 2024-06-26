@@ -1,252 +1,302 @@
 module.exports = [
-    {
-        "name": "Bamity",
-        "category_id": 1,
-        "description": "vel"
-    },
-    {
-        "name": "Opela",
-        "category_id": 2,
-        "description": "sed augue aliquam"
-    },
-    {
-        "name": "Fixflex",
-        "category_id": 2,
-        "description": "elementum"
-    },
-    {
-        "name": "Matsoft",
-        "category_id": 2,
-        "description": "montes"
-    },
-    {
-        "name": "Konklab",
-        "category_id": 3,
-        "description": "nisi"
-    },
-    {
-        "name": "It",
-        "category_id": 3,
-        "description": "eros"
-    },
-    {
-        "name": "Solarbreeze",
-        "category_id": 4,
-        "description": "in hac"
-    },
-    {
-        "name": "Pannier",
-        "category_id": 3,
-        "description": "consequat"
-    },
-    {
-        "name": "Namfix",
-        "category_id": 2,
-        "description": "gravida nisi at"
-    },
-    {
-        "name": "Toughjoyfax",
-        "category_id": 1,
-        "description": "sit amet cursus"
-    },
-    {
-        "name": "Bitchip",
-        "category_id": 1,
-        "description": "ligula sit amet"
-    },
-    {
-        "name": "Y-Solowarm",
-        "category_id": 3,
-        "description": "eu"
-    },
-    {
-        "name": "Zamit",
-        "category_id": 3,
-        "description": "libero"
-    },
-    {
-        "name": "Redhold",
-        "category_id": 3,
-        "description": "vulputate"
-    },
-    {
-        "name": "Duobam",
-        "category_id": 3,
-        "description": "vestibulum"
-    },
-    {
-        "name": "Alphazap",
-        "category_id": 4,
-        "description": "quam pharetra"
-    },
-    {
-        "name": "Zamit",
-        "category_id": 1,
-        "description": "massa"
-    },
-    {
-        "name": "Namfix",
-        "category_id": 1,
-        "description": "urna"
-    },
-    {
-        "name": "Zathin",
-        "category_id": 4,
-        "description": "id justo"
-    },
-    {
-        "name": "Opela",
-        "category_id": 3,
-        "description": "eu interdum eu"
-    },
-    {
-        "name": "Zathin",
-        "category_id": 1,
-        "description": "ac lobortis vel"
-    },
-    {
-        "name": "It",
-        "category_id": 3,
-        "description": "sagittis sapien"
-    },
-    {
-        "name": "Opela",
-        "category_id": 3,
-        "description": "augue"
-    },
-    {
-        "name": "Latlux",
-        "category_id": 4,
-        "description": "vel enim sit"
-    },
-    {
-        "name": "Zathin",
-        "category_id": 1,
-        "description": "non ligula pellentesque"
-    },
-    {
-        "name": "Toughjoyfax",
-        "category_id": 4,
-        "description": "sit amet eleifend"
-    },
-    {
-        "name": "Bytecard",
-        "category_id": 4,
-        "description": "nisl"
-    },
-    {
-        "name": "Lotlux",
-        "category_id": 1,
-        "description": "amet"
-    },
-    {
-        "name": "Bytecard",
-        "category_id": 3,
-        "description": "non mattis pulvinar"
-    },
-    {
-        "name": "Bamity",
-        "category_id": 1,
-        "description": "proin leo"
-    },
-    {
-        "name": "Ronstring",
-        "category_id": 1,
-        "description": "rhoncus aliquet pulvinar"
-    },
-    {
-        "name": "Gembucket",
-        "category_id": 1,
-        "description": "vitae nisi nam"
-    },
-    {
-        "name": "Aerified",
-        "category_id": 3,
-        "description": "massa"
-    },
-    {
-        "name": "Subin",
-        "category_id": 2,
-        "description": "lobortis"
-    },
-    {
-        "name": "Greenlam",
-        "category_id": 1,
-        "description": "et"
-    },
-    {
-        "name": "Zathin",
-        "category_id": 4,
-        "description": "lectus"
-    },
-    {
-        "name": "Vagram",
-        "category_id": 4,
-        "description": "donec odio"
-    },
-    {
-        "name": "Alphazap",
-        "category_id": 2,
-        "description": "nullam"
-    },
-    {
-        "name": "Tres-Zap",
-        "category_id": 4,
-        "description": "sapien in"
-    },
-    {
-        "name": "Fintone",
-        "category_id": 2,
-        "description": "leo odio"
-    },
-    {
-        "name": "Zontrax",
-        "category_id": 2,
-        "description": "ante"
-    },
-    {
-        "name": "Zaam-Dox",
-        "category_id": 2,
-        "description": "pellentesque"
-    },
-    {
-        "name": "Ronstring",
-        "category_id": 3,
-        "description": "bibendum"
-    },
-    {
-        "name": "Cookley",
-        "category_id": 3,
-        "description": "velit"
-    },
-    {
-        "name": "Viva",
-        "category_id": 1,
-        "description": "tortor id"
-    },
-    {
-        "name": "Ventosanzap",
-        "category_id": 3,
-        "description": "eu nibh"
-    },
-    {
-        "name": "Alpha",
-        "category_id": 4,
-        "description": "sed"
-    },
-    {
-        "name": "Tampflex",
-        "category_id": 1,
-        "description": "maecenas"
-    },
-    {
-        "name": "Viva",
-        "category_id": 4,
-        "description": "ante"
-    },
-    {
-        "name": "Namfix",
-        "category_id": 3,
-        "description": "placerat ante nulla"
-    }
-]
+  {
+    name: 'Data Structures',
+    category_id: 1,
+    description:
+      'ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus',
+  },
+  {
+    name: 'Algorithms',
+    category_id: 2,
+    description:
+      'sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget',
+  },
+  {
+    name: 'Object-Oriented Programming',
+    category_id: 3,
+    description:
+      'aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis',
+  },
+  {
+    name: 'Functional Programming',
+    category_id: 4,
+    description:
+      'congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget',
+  },
+  {
+    name: 'Procedural Programming',
+    category_id: 1,
+    description:
+      'aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi',
+  },
+  {
+    name: 'Declarative Programming',
+    category_id: 2,
+    description:
+      'justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec',
+  },
+  {
+    name: 'Scripting Languages',
+    category_id: 3,
+    description:
+      'scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec',
+  },
+  {
+    name: 'Compiled Languages',
+    category_id: 4,
+    description:
+      'primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices',
+  },
+  {
+    name: 'Concurrency',
+    category_id: 1,
+    description:
+      'sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque',
+  },
+  {
+    name: 'Parallelism',
+    category_id: 2,
+    description:
+      'diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est',
+  },
+  {
+    name: 'Multithreading',
+    category_id: 3,
+    description:
+      'nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor',
+  },
+  {
+    name: 'Asynchronous Programming',
+    category_id: 4,
+    description:
+      'nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi',
+  },
+  {
+    name: 'Event-Driven Programming',
+    category_id: 1,
+    description:
+      'lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae',
+  },
+  {
+    name: 'Recursion',
+    category_id: 2,
+    description:
+      'in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl',
+  },
+  {
+    name: 'Iteration',
+    category_id: 3,
+    description:
+      'dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac',
+  },
+  {
+    name: 'Data Types',
+    category_id: 4,
+    description:
+      'malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem',
+  },
+  {
+    name: 'Variables',
+    category_id: 1,
+    description:
+      'porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus',
+  },
+  {
+    name: 'Constants',
+    category_id: 2,
+    description:
+      'curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec',
+  },
+  {
+    name: 'Operators',
+    category_id: 3,
+    description:
+      'porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam',
+  },
+  {
+    name: 'Control Flow',
+    category_id: 4,
+    description:
+      'dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris',
+  },
+  {
+    name: 'Conditional Statements',
+    category_id: 1,
+    description:
+      'proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat',
+  },
+  {
+    name: 'Loops',
+    category_id: 2,
+    description:
+      'ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat',
+  },
+  {
+    name: 'Functions',
+    category_id: 3,
+    description:
+      'ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac',
+  },
+  {
+    name: 'Methods',
+    category_id: 4,
+    description:
+      'eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat',
+  },
+  {
+    name: 'Closures',
+    category_id: 1,
+    description:
+      'blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in',
+  },
+  {
+    name: 'Inheritance',
+    category_id: 2,
+    description:
+      'in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit',
+  },
+  {
+    name: 'Polymorphism',
+    category_id: 3,
+    description:
+      'augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam',
+  },
+  {
+    name: 'Encapsulation',
+    category_id: 4,
+    description:
+      'est congue elementum in hac habitasse platea dictumst morbi vestibulum',
+  },
+  {
+    name: 'Abstraction',
+    category_id: 1,
+    description:
+      'nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis',
+  },
+  {
+    name: 'Interfaces',
+    category_id: 2,
+    description:
+      'sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque',
+  },
+  {
+    name: 'Abstract Classes',
+    category_id: 3,
+    description:
+      'duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu',
+  },
+  {
+    name: 'Design Patterns',
+    category_id: 4,
+    description:
+      'scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc',
+  },
+  {
+    name: 'Singleton Pattern',
+    category_id: 1,
+    description:
+      'purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam',
+  },
+  {
+    name: 'Factory Pattern',
+    category_id: 2,
+    description:
+      'fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui',
+  },
+  {
+    name: 'Observer Pattern',
+    category_id: 3,
+    description:
+      'nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio',
+  },
+  {
+    name: 'Strategy Pattern',
+    category_id: 4,
+    description:
+      'nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis',
+  },
+  {
+    name: 'Decorator Pattern',
+    category_id: 1,
+    description:
+      'felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar',
+  },
+  {
+    name: 'Adapter Pattern',
+    category_id: 2,
+    description:
+      'nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero',
+  },
+  {
+    name: 'Bridge Pattern',
+    category_id: 3,
+    description:
+      'lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue',
+  },
+  {
+    name: 'Proxy Pattern',
+    category_id: 4,
+    description:
+      'nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio',
+  },
+  {
+    name: 'Chain of Responsibility Pattern',
+    category_id: 1,
+    description:
+      'in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla',
+  },
+  {
+    name: 'Command Pattern',
+    category_id: 2,
+    description:
+      'hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget',
+  },
+  {
+    name: 'Interpreter Pattern',
+    category_id: 3,
+    description:
+      'ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
+  },
+  {
+    name: 'Iterator Pattern',
+    category_id: 4,
+    description:
+      'pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus',
+  },
+  {
+    name: 'Mediator Pattern',
+    category_id: 1,
+    description:
+      'blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare',
+  },
+  {
+    name: 'Memento Pattern',
+    category_id: 2,
+    description:
+      'est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis',
+  },
+  {
+    name: 'State Pattern',
+    category_id: 3,
+    description:
+      'convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet',
+  },
+  {
+    name: 'Template Method Pattern',
+    category_id: 4,
+    description:
+      'tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus',
+  },
+  {
+    name: 'Visitor Pattern',
+    category_id: 1,
+    description:
+      'magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis',
+  },
+  {
+    name: 'MVC Pattern',
+    category_id: 2,
+    description:
+      'sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at',
+  },
+];
