@@ -17,10 +17,6 @@ exports.createTables = async () => {
         created_at TIMESTAMPTZ,
         FOREIGN KEY (category_id) REFERENCES categories(category_id) ON DELETE CASCADE
     );`);
-    await db.query(`CREATE TABLE tags (
-        tag_id SERIAL PRIMARY KEY,
-        name VARCHAR(255) UNIQUE
-    );`);
     await db.query(`CREATE TABLE notes (
         note_id SERIAL PRIMARY KEY,
         title VARCHAR(255) UNIQUE NOT NULL,
@@ -32,11 +28,10 @@ exports.createTables = async () => {
         created_at TIMESTAMPTZ,
         FOREIGN KEY (category_id) REFERENCES categories(category_id) ON DELETE CASCADE
     );`);
-    await db.query(`CREATE TABLE note_tags (
-        note_id INT NOT NULL,
-        tag_id INT NOT NULL,
-        PRIMARY KEY (note_id, tag_id),
-        FOREIGN KEY (note_id) REFERENCES notes (note_id) ON DELETE CASCADE,
-        FOREIGN KEY (tag_id) REFERENCES tags (tag_id) ON DELETE CASCADE
+    await db.query(`CREATE TABLE tags (
+        tag_id SERIAL PRIMARY KEY,
+        name VARCHAR(255),
+        note_id INT,
+        FOREIGN KEY (note_id) REFERENCES notes(note_id) 
     );`);
 }

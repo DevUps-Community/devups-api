@@ -9,7 +9,6 @@ const seed = async ({ categoryData, topicsData, tagsData, notesData }) => {
   try {
     await dropTables();
     await createTables();
-    //TODO - INSERT SEED DATA FOR THE NOTES
 
     const catQueryStr = format(
       'INSERT INTO categories(name, description) VALUES %L;',
@@ -27,23 +26,23 @@ const seed = async ({ categoryData, topicsData, tagsData, notesData }) => {
     );
     await db.query(topicQueryStr);
 
+    const notesQueryStr = format(
+      'INSERT INTO notes(title, content, category_id, topic_id) VALUES %L;',
+      notesData.map(({ title, content, category_id, topic_id }) => [
+        title,
+        content,
+        category_id,
+        topic_id,
+      ])
+    );
+    await db.query(notesQueryStr);
+
     const tagsQueryStr = format(
-      'INSERT INTO tags(name) VALUES %L;',
-      tagsData.map(({ name }) => [name])
+      'INSERT INTO tags(name, note_id) VALUES %L;',
+      tagsData.map(({ name, note_id }) => [name, note_id])
     );
     await db.query(tagsQueryStr);
-
-    const notesQueryStr = format(
-        'INSERT INTO notes(title, content, category_id, topic_id) VALUES %L;',
-        notesData.map(({ title, content, category_id, topic_id }) => [
-          title,
-          content,
-          category_id,
-          topic_id,
-        ])
-      );
-      await db.query(notesQueryStr);
-
+    
   } catch (err) {
     console.log(err);
   }

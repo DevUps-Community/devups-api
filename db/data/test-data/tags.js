@@ -1,155 +1,102 @@
 module.exports = [
-  {
-    name: 'sandbox',
-  },
-  {
-    name: 'API',
-  },
-  {
-    name: 'callback',
-  },
-  {
-    name: 'function',
-  },
-  {
-    name: 'variable',
-  },
-  {
-    name: 'loop',
-  },
-  {
-    name: 'array',
-  },
-  {
-    name: 'object',
-  },
-  {
-    name: 'class',
-  },
-  {
-    name: 'module',
-  },
-  {
-    name: 'import',
-  },
-  {
-    name: 'export',
-  },
-  {
-    name: 'async',
-  },
-  {
-    name: 'await',
-  },
-  {
-    name: 'promise',
-  },
-  {
-    name: 'inheritance',
-  },
-  {
-    name: 'encapsulation',
-  },
-  {
-    name: 'polymorphism',
-  },
-  {
-    name: 'constructor',
-  },
-  {
-    name: 'prototype',
-  },
-  {
-    name: 'closure',
-  },
-  {
-    name: 'scope',
-  },
-  {
-    name: 'DOM',
-  },
-  {
-    name: 'event',
-  },
-  {
-    name: 'listener',
-  },
-  {
-    name: 'middleware',
-  },
-  {
-    name: 'endpoint',
-  },
-  {
-    name: 'JSON',
-  },
-  {
-    name: 'XML',
-  },
-  {
-    name: 'REST',
-  },
-  {
-    name: 'CRUD',
-  },
-  {
-    name: 'SQL',
-  },
-  {
-    name: 'NoSQL',
-  },
-  {
-    name: 'index',
-  },
-  {
-    name: 'key',
-  },
-  {
-    name: 'value',
-  },
-  {
-    name: 'session',
-  },
-  {
-    name: 'cookie',
-  },
-  {
-    name: 'token',
-  },
-  {
-    name: 'authentication',
-  },
-  {
-    name: 'authorization',
-  },
-  {
-    name: 'frontend',
-  },
-  {
-    name: 'backend',
-  },
-  {
-    name: 'full-stack',
-  },
-  {
-    name: 'framework',
-  },
-  {
-    name: 'library',
-  },
-  {
-    name: 'package',
-  },
-  {
-    name: 'repository',
-  },
-  {
-    name: 'commit',
-  },
-  {
-    name: 'push',
-  },
-  {
-    name: 'HTTPS',
-  },
+  { name: 'Factory Pattern', note_id: 11 },
+  { name: 'Control Flow', note_id: 3 },
+  { name: 'Operators', note_id: 4 },
+  { name: 'Object-Oriented Programming', note_id: 5 },
+  { name: 'Proxy Pattern', note_id: 4 },
+  { name: 'Multithreading', note_id: 13 },
+  { name: 'Functions', note_id: 18 },
+  { name: 'Variables', note_id: 14 },
+  { name: 'Iteration', note_id: 13 },
+  { name: 'Compiled Languages', note_id: 14 },
+  { name: 'Multithreading', note_id: 16 },
+  { name: 'Recursion', note_id: 1 },
+  { name: 'Strategy Pattern', note_id: 1 },
+  { name: 'Methods', note_id: 2 },
+  { name: 'Data Types', note_id: 8 },
+  { name: 'MVP Pattern', note_id: 11 },
+  { name: 'Concurrency', note_id: 3 },
+  { name: 'Decorator Pattern', note_id: 1 },
+  { name: 'Data Types', note_id: 11 },
+  { name: 'Mediator Pattern', note_id: 13 },
+  { name: 'MVVM Pattern', note_id: 5 },
+  { name: 'Memento Pattern', note_id: 16 },
+  { name: 'Interpreter Pattern', note_id: 18 },
+  { name: 'Recursion', note_id: 18 },
+  { name: 'Visitor Pattern', note_id: 11 },
+  { name: 'Declarative Programming', note_id: 8 },
+  { name: 'Procedural Programming', note_id: 13 },
+  { name: 'Proxy Pattern', note_id: 16 },
+  { name: 'Inheritance', note_id: 1 },
+  { name: 'Template Method Pattern', note_id: 8 },
+  { name: 'MVC Pattern', note_id: 2 },
+  { name: 'State Pattern', note_id: 12 },
+  { name: 'Object-Oriented Programming', note_id: 8 },
+  { name: 'Loops', note_id: 1 },
+  { name: 'Abstract Classes', note_id: 10 },
+  { name: 'Operators', note_id: 1 },
+  { name: 'Multithreading', note_id: 1 },
+  { name: 'Decorator Pattern', note_id: 1 },
+  { name: 'Client-Server Architecture', note_id: 15 },
+  { name: 'Bridge Pattern', note_id: 15 },
+  { name: 'MVP Pattern', note_id: 17 },
+  { name: 'Proxy Pattern', note_id: 20 },
+  { name: 'Operators', note_id: 18 },
+  { name: 'MVVM Pattern', note_id: 5 },
+  { name: 'Bridge Pattern', note_id: 12 },
+  { name: 'Functions', note_id: 17 },
+  { name: 'Variables', note_id: 13 },
+  { name: 'Iterator Pattern', note_id: 9 },
+  { name: 'Data Types', note_id: 19 },
+  { name: 'Conditional Statements', note_id: 16 },
+  { name: 'Iterator Pattern', note_id: 8 },
+  { name: 'Recursion', note_id: 2 },
+  { name: 'Mediator Pattern', note_id: 19 },
+  { name: 'Abstraction', note_id: 9 },
+  { name: 'Data Types', note_id: 1 },
+  { name: 'Decorator Pattern', note_id: 20 },
+  { name: 'Concurrency', note_id: 10 },
+  { name: 'Control Flow', note_id: 9 },
+  { name: 'Proxy Pattern', note_id: 11 },
+  { name: 'Scripting Languages', note_id: 7 },
+  { name: 'Procedural Programming', note_id: 19 },
+  { name: 'Abstraction', note_id: 15 },
+  { name: 'Abstract Classes', note_id: 2 },
+  { name: 'Bridge Pattern', note_id: 1 },
+  { name: 'Control Flow', note_id: 8 },
+  { name: 'Functions', note_id: 5 },
+  { name: 'Iteration', note_id: 10 },
+  { name: 'Operators', note_id: 4 },
+  { name: 'Mediator Pattern', note_id: 17 },
+  { name: 'Constants', note_id: 16 },
+  { name: 'Parallelism', note_id: 15 },
+  { name: 'State Pattern', note_id: 6 },
+  { name: 'Template Method Pattern', note_id: 7 },
+  { name: 'Control Flow', note_id: 19 },
+  { name: 'Variables', note_id: 1 },
+  { name: 'Iteration', note_id: 2 },
+  { name: 'Iterator Pattern', note_id: 12 },
+  { name: 'Interfaces', note_id: 8 },
+  { name: 'State Pattern', note_id: 10 },
+  { name: 'Recursion', note_id: 13 },
+  { name: 'Abstract Classes', note_id: 5 },
+  { name: 'Chain of Responsibility Pattern', note_id: 15 },
+  { name: 'Parallelism', note_id: 15 },
+  { name: 'Iterator Pattern', note_id: 10 },
+  { name: 'Visitor Pattern', note_id: 13 },
+  { name: 'Singleton Pattern', note_id: 12 },
+  { name: 'Singleton Pattern', note_id: 6 },
+  { name: 'Interpreter Pattern', note_id: 11 },
+  { name: 'Conditional Statements', note_id: 18 },
+  { name: 'Microservices Architecture', note_id: 3 },
+  { name: 'Constants', note_id: 8 },
+  { name: 'Memento Pattern', note_id: 19 },
+  { name: 'Design Patterns', note_id: 16 },
+  { name: 'Closures', note_id: 18 },
+  { name: 'Scripting Languages', note_id: 8 },
+  { name: 'Strategy Pattern', note_id: 12 },
+  { name: 'State Pattern', note_id: 18 },
+  { name: 'Asynchronous Programming', note_id: 20 },
+  { name: 'Methods', note_id: 11 },
+  { name: 'Singleton Pattern', note_id: 2 },
 ];
