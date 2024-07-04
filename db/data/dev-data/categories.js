@@ -14,5 +14,5 @@ module.exports = [
   {
     name: 'Java',
     description: 'A popular programming language used for web development.',
-  }
+  },
 ];
