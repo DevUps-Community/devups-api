@@ -1,6 +1,9 @@
 const express = require('express');
-const { getCategories, handle404, getTopics, getTopicsByCategoryId } = require('./controllers/categories.controllers');
+const { getCategories } = require('./controllers/categories.controllers');
+const { getTopics, getTopicsByCategoryId } = require('./controllers/topics.controllers');
+const { handle404 } = require('./controllers/handle404.cotrollers');
 const { handleCustomErrors, handlePsqlErrors, handleServerErrors } = require('./errors');
+//const controllers = require('./controllers/index');
 
 const app = express();
 app.use(express.json());
