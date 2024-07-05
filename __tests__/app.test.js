@@ -33,7 +33,6 @@ test('404: should respond with a 404 error message if the path is invalid', () =
     .expect(404)
     .then(({ body }) => {
       expect(body.msg).toBe('Not found');
-      console.log(body.msg);
     });
 });
 
@@ -59,7 +58,6 @@ describe('GET /api/topics', () => {
       .expect(404)
       .then(({ body }) => {
         expect(body.msg).toBe('Not found');
-        console.log(body.msg);
       });
   });
 });
@@ -85,7 +83,6 @@ describe('GET /api/topics/:category_id', () => {
       .expect(400)
       .then(({ body }) => {
         expect(body.msg).toBe('Bad request');
-        console.log(body.msg);
       });
   });
 
