@@ -3,6 +3,7 @@ const request = require('supertest');
 const db = require('../db/connection');
 const seed = require('../db/seeds/seed');
 const testData = require('../db/data/test-data/index');
+//const endPoints = require('../endpoints.json');
 
 beforeEach(() => {
   return seed(testData);
@@ -93,6 +94,25 @@ describe('GET /api/topics/:category_id', () => {
       .then(({ body }) => {
         expect(body.msg).toBe('Not found');
         console.log(body.msg);
+      });
+  });
+});
+
+describe('POST /api/suggestions/:user_id', () => {
+  test('201: should return a suggestion object by user_id', () => {
+    const suggestion = {
+      created_by: 'devups',
+      body: 'This is an awesome suggestion',
+    };
+    return request(app)
+      .post('/api/suggestions/1')
+      .send(suggestion)
+      .expect(201)
+      .then(({ body }) => {
+        expect(body.suggestion).toMatchObject({
+          created_by: 'devups',
+          body: 'This is an awesome suggestion',
+        });
       });
   });
 });

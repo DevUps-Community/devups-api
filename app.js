@@ -12,6 +12,8 @@ app.get("/api/categories", getCategories)
 app.get('/api/topics', getTopics)
 app.get('/api/topics/:category_id', getTopicsByCategoryId)
 
+app.post('/api/suggestions/:user_id', postSuggestionByUserId)
+
 app.all('*', handle404)
 
 app.use(handleCustomErrors)
