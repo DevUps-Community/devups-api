@@ -3,12 +3,16 @@ const db = require('../connection');
 const { createTables } = require('./createTables');
 const { dropTables } = require('./dropTables');
 
-const seed = async ({ categoryData, topicsData, tagsData, notesData }) => {
-  //   await db.query(`DROP TABLE IF EXISTS suggestions;`);
-  //   await db.query(`DROP TABLE IF EXISTS favourites;`);
+const seed = async ({ suggestionsData, categoryData, topicsData, tagsData, notesData }) => {
   try {
     await dropTables();
     await createTables();
+
+    const suggestionsQueryStr = format(
+      'INSERT INTO suggestions(created_by, content) VALUES %L;',
+      suggestionsData.map(({ created_by, content }) => [created_by, content])
+    );
+    await db.query(suggestionsQueryStr);
 
     const catQueryStr = format(
       'INSERT INTO categories(name, description) VALUES %L;',
@@ -42,7 +46,6 @@ const seed = async ({ categoryData, topicsData, tagsData, notesData }) => {
       tagsData.map(({ name, note_id }) => [name, note_id])
     );
     await db.query(tagsQueryStr);
-    
   } catch (err) {
     console.log(err);
   }

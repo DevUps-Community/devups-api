@@ -1,14 +1,20 @@
 const db = require('../connection');
 
 exports.createTables = async () => {
-    await db.query(`CREATE TABLE categories (
+  await db.query(`CREATE TABLE suggestions (
+    suggestion_id SERIAL PRIMARY KEY,
+    created_by VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );`);
+  await db.query(`CREATE TABLE categories (
         category_id SERIAL PRIMARY KEY,
         name VARCHAR(255) UNIQUE NOT NULL,
         description TEXT NOT NULL,
         created_by VARCHAR(30),
         created_at TIMESTAMPTZ
     );`);
-    await db.query(`CREATE TABLE topics (
+  await db.query(`CREATE TABLE topics (
         topic_id SERIAL PRIMARY KEY,
         category_id INT,
         name VARCHAR(255) NOT NULL,
@@ -17,7 +23,7 @@ exports.createTables = async () => {
         created_at TIMESTAMPTZ,
         FOREIGN KEY (category_id) REFERENCES categories(category_id) ON DELETE CASCADE
     );`);
-    await db.query(`CREATE TABLE notes (
+  await db.query(`CREATE TABLE notes (
         note_id SERIAL PRIMARY KEY,
         title VARCHAR(255) UNIQUE NOT NULL,
         content TEXT,
@@ -28,10 +34,10 @@ exports.createTables = async () => {
         created_at TIMESTAMPTZ,
         FOREIGN KEY (category_id) REFERENCES categories(category_id) ON DELETE CASCADE
     );`);
-    await db.query(`CREATE TABLE tags (
+  await db.query(`CREATE TABLE tags (
         tag_id SERIAL PRIMARY KEY,
         name VARCHAR(255),
         note_id INT,
         FOREIGN KEY (note_id) REFERENCES notes(note_id) 
     );`);
-}
+};

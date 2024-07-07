@@ -1,9 +1,8 @@
 const { insertSuggestionByUserId } = require("../models/suggestions.models")
 
 exports.postSuggestionByUserId = (req, res, next) => {
-    const { user_id } = req.params
-    const { suggestion } = req.body
-    insertSuggestionByUserId(user_id, suggestion)
+    const { created_by, content } = req.body
+    insertSuggestionByUserId(created_by, content)
    .then((suggestion) => {
         res.status(201).send({suggestion})
     }).catch(next)

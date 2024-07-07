@@ -1,6 +1,7 @@
 const express = require('express');
 const { getCategories } = require('./controllers/categories.controllers');
 const { getTopics, getTopicsByCategoryId } = require('./controllers/topics.controllers');
+const { postSuggestionByUserId } = require('./controllers/suggestions.controllers');
 const { handle404 } = require('./controllers/handle404.cotrollers');
 const { handleCustomErrors, handlePsqlErrors, handleServerErrors } = require('./errors');
 //const controllers = require('./controllers/index');

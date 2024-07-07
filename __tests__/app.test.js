@@ -5,12 +5,11 @@ const seed = require('../db/seeds/seed');
 const testData = require('../db/data/test-data/index');
 //const endPoints = require('../endpoints.json');
 
-beforeEach(() => {
-  return seed(testData);
-});
 afterAll(() => {
-  db.end();
+    db.end();
 });
+
+beforeEach(() => seed(testData));
 
 describe('GET /api/categories', () => {
   test('200: should return an array of all the categories objects', () => {
@@ -102,7 +101,7 @@ describe('POST /api/suggestions/:user_id', () => {
   test('201: should return a suggestion object by user_id', () => {
     const suggestion = {
       created_by: 'devups',
-      body: 'This is an awesome suggestion',
+      content: 'This is an awesome suggestion',
     };
     return request(app)
       .post('/api/suggestions/1')
