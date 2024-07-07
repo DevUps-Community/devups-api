@@ -4,7 +4,7 @@
   "description": "",
   "main": "listen.js",
   "scripts": {
-    "test": "jest --coverage --watch",
+    "test": "jest --coverage",
     "setup-dbs": "psql -f ./db/setup.sql",
     "seed": "node db/seeds/run-seed.js"
   },

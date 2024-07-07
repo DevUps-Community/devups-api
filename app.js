@@ -1,18 +1,15 @@
 const express = require('express');
-const { getCategories } = require('./controllers/categories.controllers');
-const { getTopics, getTopicsByCategoryId } = require('./controllers/topics.controllers');
-const { handle404 } = require('./controllers/handle404.cotrollers');
 const { handleCustomErrors, handlePsqlErrors, handleServerErrors } = require('./errors');
-//const controllers = require('./controllers/index');
+const controllers = require('./controllers');
 
 const app = express();
 app.use(express.json());
 
-app.get("/api/categories", getCategories)
-app.get('/api/topics', getTopics)
-app.get('/api/topics/:category_id', getTopicsByCategoryId)
+app.get("/api/categories", controllers.getCategories)
+app.get('/api/topics', controllers.getTopics)
+app.get('/api/topics/:category_id', controllers.getTopicsByCategoryId)
 
-app.all('*', handle404)
+app.all('*', controllers.handle404)
 
 app.use(handleCustomErrors)
 app.use(handlePsqlErrors)
