@@ -138,9 +138,10 @@ describe('POST /api/suggestions', () => {
       });
   });
   
-  test('400: should respond with an error message when mssing a required field', () => {
+  test.only('400: should respond with an error message when missing a required field', () => {
     const newSuggestion = {
-      description: 'This is a test suggestion',
+      name: "devups",
+      email: 'user@example.com',
     };
     return request(app)
       .post('/api/suggestions')
@@ -150,13 +151,15 @@ describe('POST /api/suggestions', () => {
         expect(body.msg).toBe('Bad request');
       });
   });
-  test('404: should respond with a 404 error message if the user_id does not exist', () => {
+  test('404: should respond with a 404 error message if endpoint is incorrect', () => {
+    const newSuggestion = {
+      name: "devups",
+      email: 'user@example.com',
+      body: 'This is a great suggestion',
+    };
     return request(app)
       .post('/api/suggestion')
-      .send({
-        topic_id: 1,
-        description: 'This is a test suggestion',
-      })
+      .send(newSuggestion)
       .expect(404)
       .then(({ body }) => {
         expect(body.msg).toBe('Not found');
