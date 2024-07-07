@@ -1,6 +1,14 @@
 const db = require('../connection');
 
 exports.createTables = async () => {
+    await db.query(`CREATE TABLE suggestions (
+        suggestion_id SERIAL PRIMARY KEY,
+        name TEXT NOT NULL,
+        email TEXT NOT NULL,
+        content TEXT,
+        created_by VARCHAR(255),
+        created_at TIMESTAMP DEFAULT NOW()
+        );`)
     await db.query(`CREATE TABLE categories (
         category_id SERIAL PRIMARY KEY,
         name VARCHAR(255) UNIQUE NOT NULL,
