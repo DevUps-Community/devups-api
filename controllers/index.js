@@ -1,4 +1,10 @@
-exports.getCategories = require('./categories.controllers');
-exports.getTopics = require('./topics.controllers');
-exports.getTopicsByCategoryId = require('./topics.controllers');
-exports.handle404 = require('./handle404.controllers');
+const { getTopics, getTopicsByCategoryId } = require('./topics.controllers');
+const { getCategories } = require('./categories.controllers');
+const { handle404 } = require('./handle404.controllers');
+
+module.exports = {
+  getCategories,
+  getTopics,
+  getTopicsByCategoryId,
+  handle404,
+};
