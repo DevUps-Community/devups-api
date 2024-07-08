@@ -8,6 +8,7 @@ app.use(express.json());
 app.get("/api/categories", controllers.getCategories)
 app.get('/api/topics', controllers.getTopics)
 app.get('/api/topics/:category_id', controllers.getTopicsByCategoryId)
+app.get('/api/notes/:note_id', controllers.getNoteById)
 
 app.post('/api/suggestions', controllers.postSuggestionByUserId)
 

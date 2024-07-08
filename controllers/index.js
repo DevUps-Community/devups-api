@@ -2,6 +2,7 @@ const { getTopics, getTopicsByCategoryId } = require('./topics.controllers');
 const { getCategories } = require('./categories.controllers');
 const { postSuggestionByUserId } = require('./suggestions.controllers');
 const { handle404 } = require('./handle404.controllers');
+const { getNoteById } = require('./notes.controllers');
 
 module.exports = {
   getCategories,
@@ -9,4 +10,5 @@ module.exports = {
   getTopicsByCategoryId,
   postSuggestionByUserId,
   handle404,
+  getNoteById
 };
