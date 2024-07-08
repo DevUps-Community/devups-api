@@ -9,7 +9,7 @@ exports.insertSuggestionByUserId = (suggestionData) => {
         suggestionData.body
       );
   return db.query(queryString).then((result) => {
-    if (result.rows[0] === 0) {
+    if (!result.rows.length) {
       return Promise.reject({status: 400, msg: 'Bad request'});
     }
     return result.rows[0];

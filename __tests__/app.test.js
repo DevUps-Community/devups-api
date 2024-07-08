@@ -138,7 +138,7 @@ describe('POST /api/suggestions', () => {
       });
   });
   
-  test.only('400: should respond with an error message when missing a required field', () => {
+  test('400: should respond with an error message when missing a required field', () => {
     const newSuggestion = {
       name: "devups",
       email: 'user@example.com',

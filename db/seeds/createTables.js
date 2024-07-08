@@ -5,7 +5,7 @@ exports.createTables = async () => {
         suggestion_id SERIAL PRIMARY KEY,
         name TEXT NOT NULL,
         email TEXT NOT NULL,
-        content TEXT,
+        content TEXT NOT NULL,
         created_by VARCHAR(255),
         created_at TIMESTAMP DEFAULT NOW()
         );`)
