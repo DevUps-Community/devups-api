@@ -109,7 +109,7 @@ describe('POST /api/suggestions', () => {
       .send(newSuggestion)
       .expect(201)
       .then(({ body }) => {
-        const {suggestion} = body
+        const { suggestion } = body
         console.log(suggestion);
         expect(typeof suggestion).toBe('object');
         expect(typeof suggestion.name).toBe('string');
@@ -129,7 +129,7 @@ describe('POST /api/suggestions', () => {
       .send(newSuggestion)
       .expect(201)
       .then(({ body }) => {
-        const {suggestion} = body
+        const { suggestion } = body
         expect(typeof suggestion).toBe('object');
         expect(typeof suggestion.name).toBe('string');
         expect(typeof suggestion.email).toBe('string');
@@ -137,7 +137,7 @@ describe('POST /api/suggestions', () => {
         expect(suggestion).not.toHaveProperty('unnessary_field');
       });
   });
-  
+
   test('400: should respond with an error message when missing a required field', () => {
     const newSuggestion = {
       name: "devups",
@@ -163,6 +163,53 @@ describe('POST /api/suggestions', () => {
       .expect(404)
       .then(({ body }) => {
         expect(body.msg).toBe('Not found');
+      });
+  });
+});
+
+describe('GET /api/notes/:note_id', () => {
+  test('200: Should return the note object by note_id and its correct keys.', () => {
+    return request(app)
+      .get("/api/notes/1")
+      .expect(200)
+      .then(({ body }) => {
+        const note = body.note;
+        console.log(note);
+        expect(typeof note).toBe('object');
+        expect(typeof note.title).toBe('string');
+        expect(typeof note.content).toBe('string');
+        expect(typeof note.category_id).toBe('number');
+        expect(typeof note.topic_id).toBe('number');
+        expect(typeof note.tag_id).toBe('number');
+        expect(typeof note.tag_name).toBe('string');
+      })
+  });
+  test('400: should respond with a 400 error message if the category_id is not a valid type', () => {
+    return request(app)
+      .get('/api/notes/banana')
+      .expect(400)
+      .then(({ body }) => {
+        expect(body.msg).toBe('Bad request');
+      });
+  });
+});
+
+describe('GET /api/search/notes', () => {
+  test('200: Should return an array of note summaries with correct keys.', () => {
+    return request(app)
+      .get('/api/search/notes')
+      .expect(200)
+      .then(({ body }) => {
+        console.log(body);
+        const notes = body.notes;
+        expect(Array.isArray(notes)).toBe(true);
+        notes.forEach(note => {
+          expect(note).toHaveProperty('note_id');
+          expect(typeof note.note_id).toBe('number');
+          expect(note).toHaveProperty('title');
+          expect(typeof note.title).toBe('string');
+          expect(note).toHaveProperty('tag_name');
+        });
       });
   });
 });
